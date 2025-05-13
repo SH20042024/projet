@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Load the trained model
 model = joblib.load('bestmodel.joblib')
 
-# Mapping dictionaries (نفس اللي درّبتي بيهم النموذج)
+# Mapping dictionaries
 gender_map = {"Male": 1, "Female": 0}
 yes_no_map = {"Yes": 1, "No": 0}
 satisfaction_map = {"Low": 0, "Medium": 1, "High": 2}
